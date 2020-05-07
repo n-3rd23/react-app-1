@@ -1,0 +1,7 @@
+.card-monster_container {
+    background-color: rgba(21, 165, 165, 0.815);
+    transition: .3s;
+}
+.card-monster_container:hover {
+    background-color: rgba(18, 145, 145, 0.863); 
+}
