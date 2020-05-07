@@ -10,10 +10,9 @@ class App extends Component {
       monsters: [],
       searchField: ''
     }
-    this.changeHandler = this.changeHandler.bind(this)
   }
 
-  changeHandler(event) {
+  changeHandler = (event) => {
     this.setState({
       searchField: event.target.value
     })
@@ -27,7 +26,7 @@ class App extends Component {
 
   render() {
     const {monsters, searchField} = this.state
-    const filterdMonster = monsters.filter(monster => 
+    const filterdMonster = monsters.filter((monster) => 
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     )
     return (
